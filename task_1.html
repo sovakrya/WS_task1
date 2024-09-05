@@ -1,71 +1,287 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    </head>
-    <body>
-        <header class="header-box">
-            <div class="header-logo-wrapper">
-              <img src="./icons/WS-Logo-Mono.svg" height="80px" width="112px" />
+  <head> </head>
+  <body>
+    <header class="header-box">
+      <div class="header-logo-wrapper">
+        <img
+          src="./icons/WS-Logo-Mono.svg"
+          height="80px"
+          width="112px"
+          class="header-logo"
+        />
+      </div>
+
+      <div class="header-content-box">
+        <div class="special-project-box">
+          <div class="special-project-text">
+            <span class="special-project-title">🔥 Спецпроект 🔥</span>
+
+            <span class="special-project-subtitle"
+              >Готовы ли вы к разработке продукта?</span
+            >
+
+            <span class="special-project-advice"
+              >Определите свой уровень знаний в продуктовой разработке и
+              бесплатно получите рекомендации от экспертов рынка</span
+            >
+          </div>
+
+          <div class="special-project-btn-box">
+            <button class="special-project-btn">Начать тест</button>
+            <span class="text-under-btn">Прохождение займет ~25 минут</span>
+          </div>
+
+          <div class="semicircle">
+            <div class="more-details-box">
+              <span class="more-details-text">Подробнее</span>
+              <img
+                src="./icons/strokeHeader.svg"
+                width="18px"
+                height="14px"
+                class="header-stroke"
+              />
             </div>
-    
-            <div class="header-content">
-              <div class="header-test-box">
-                <div class="test-box_text-content">
-                  <span class="header-text-project">🔥 Спецпроект 🔥</span>
-    
-                  <span class="header-text-redy_develope"
-                    >Готовы ли вы к разработке продукта?</span
-                  >
-    
-                  <span class="header-text-define_lvl"
-                    >Определите свой уровень знаний в продуктовой разработке и
-                    бесплатно получите рекомендации от экспертов рынка</span
-                  >
-                </div>
-    
-                <div class="test-box_btn-content">
-                  <div class="header-button-box">
-                    <button class="button-start-test">Начать тест</button>
-    
-                    <span class="header-text-under-button"
-                      >Прохождение займет ~25 минут</span
-                    >
-                  </div>
-                </div>
-    
-                <div>
-                  <div class="more-details-box_bacground-img"></div>
-    
-                  <div class="more-details-box">
-                    <span class="text-more-details">Подробнее</span>
-                    <img
-                      src="./icons/strokeHeader.svg"
-                      height="14px"
-                      width="18px"
-                      class="more-details-stroke"
-                    />
-                  </div>
-                </div>
-              </div>
-    
-              <img src="./icons/headerImage.svg" height="740px" width="676px" />
-            </div>
-          </header>
-    </body>
+            <div class="inner-circle"></div>
+          </div>
+        </div>
+
+        <div class="header-decor">
+          <img src="./icons/headerImage.svg" width="676px" height="740px" />
+        </div>
+      </div>
+    </header>
+
+    <div class="partners-box">
+        <div class="content-partners-box">
+          <span class="title-partners">Генеральные партнеры</span>
+
+          <div class="partners_icons-box">
+            <img src="./icons/cossa.svg" width="159.5px" height="48.72px" />
+            <img src="./icons/ruward.svg" width="134px" height="80px" />
+          </div>
+        </div>
+
+        <div class="content-partners-box">
+          <span class="title-partners">Информационные партнеры</span>
+
+          <div class="partners_icons-box">
+            <img src="./icons/Biz360.svg" width="119.57px" height="80px" />
+            <img src="./icons/cmsMagazine.svg" width="202.53px" height="80px" />
+            <img src="./icons/arda.svg" width="129.66px" height="80px" />
+            <img src="./icons/rusbase.svg" width="179.48px" height="80px" />
+          </div>
+        </div>
+      </div>
+  </body>
 </html>
 
 <style>
-    *,
-    *::before,
-    *::after {
-        box-sizing: border-box;
-    }
+  @font-face {
+    font-family: "Futura PT";
+    src: local("Futura PT"), url("fonts/Futura\ PT_Medium.ttf");
+  }
 
-    body {
-        margin: 0;
-        padding: 0;
-        border: none;
-    }
+  @font-face {
+    font-family: "Futura PT Cond";
 
-    
+    src: local("Futura PT Cond"), url("fonts/Futura\ PT_Cond\ Medium.ttf");
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  .header-box {
+    display: flex;
+    flex-direction: column;
+    padding: 0 132px;
+  }
+
+  .header-logo-wrapper {
+    position: absolute;
+    right: 132px;
+    top: 64px;
+  }
+
+  .header-logo {
+    height: 80px;
+    width: 112px;
+  }
+
+  .header-content-box {
+    display: flex;
+    gap: 12px;
+    justify-content: space-between;
+  }
+
+  .special-project-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 96px 48px 0 48px;
+    gap: 96px;
+    border: 1px solid #dbe3f0;
+    background-color: #ffffff;
+    box-shadow: 0px 20px 40px 0px #0000000f;
+    width: 488px;
+    height: 790px;
+    border-radius: 0px 0px 20px 20px;
+  }
+
+  .special-project-text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+  }
+
+  .special-project-title {
+    color: #a3b3cc;
+    font-family: "Futura PT";
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .special-project-subtitle {
+    color: #27303f;
+    font-family: "Futura PT Cond";
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 64px;
+    text-align: center;
+  }
+
+  .special-project-advice {
+    color: #637899;
+    font-family: "Futura PT";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .special-project-btn-box {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .special-project-btn {
+    border: 2px solid #56b8ff;
+    background-color: #ffffff;
+    width: 392px;
+    height: 56px;
+    border-radius: 12px;
+    color: #56b8ff;
+    font-family: "Futura PT";
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    transition: 0.5s ease;
+    cursor: pointer;
+  }
+
+  .special-project-btn:hover {
+    background-color: #56b8ff;
+    color: #ffffff;
+    transition: 0.5s ease;
+  }
+
+  .text-under-btn {
+    font-family: "Futura PT";
+    color: #637899;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+  }
+
+  .semicircle {
+    position: absolute;
+    bottom: 0;
+    align-self: center;
+    width: 424px;
+    height: 123px;
+    opacity: 60%;
+    background: linear-gradient(90deg, #a4b7fa 1.1%, #adddff 100%);
+    border-radius: 90px 90px 0 0;
+  }
+
+  .inner-circle {
+    position: absolute;
+    left: 39px;
+    bottom: 0;
+    height: 50%;
+    width: 80%;
+    background-color: #ffffff;
+    border-radius: 100px 100px 0 0;
+  }
+
+  .more-details-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 14px;
+  }
+
+  .more-details-text {
+    font-family: "Futura PT";
+    color: #637899;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .header-stroke {
+    width: 18px;
+    height: 14px;
+    cursor: pointer;
+  }
+
+  .header-decor {
+    margin-top: 80px;
+  }
+
+  .partners-box {
+    display: flex;
+    flex-direction: column;
+    padding: 96px 132px 0 132px;
+    gap: 56px;
+    align-items: center;
+  }
+
+  .content-partners-box {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+  }
+
+  .title-partners{
+    font-family: "Futura PT";
+    color: #27303F;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 31.68px;
+    text-align: center;
+  }
+
+  .partners_icons-box {
+    display: flex;
+    gap: 72px;
+
+  }
 </style>
