@@ -14,11 +14,13 @@
 
       <div class="header-content-box">
         <div class="special-project-box">
+
+            <div class="special-project-content">
           <div class="special-project-text">
             <span class="special-project-title">🔥 Спецпроект 🔥</span>
 
-            <span class="special-project-subtitle"
-              >Готовы ли вы к разработке продукта?</span
+            <h1 class="special-project-subtitle"
+              >Готовы ли вы к разработке продукта?</h1
             >
 
             <span class="special-project-advice"
@@ -31,6 +33,7 @@
             <button class="special-project-btn">Начать тест</button>
             <span class="text-under-btn">Прохождение займет ~25 минут</span>
           </div>
+        </div>
 
           <div class="semicircle">
             <div class="more-details-box">
@@ -54,7 +57,7 @@
 
     <div class="partners-box">
         <div class="content-partners-box">
-          <span class="title-partners">Генеральные партнеры</span>
+          <h4 class="title-partners">Генеральные партнеры</h4>
 
           <div class="partners_icons-box">
             <img src="./icons/cossa.svg" width="159.5px" height="48.72px" />
@@ -63,7 +66,7 @@
         </div>
 
         <div class="content-partners-box">
-          <span class="title-partners">Информационные партнеры</span>
+          <h4 class="title-partners">Информационные партнеры</h4>
 
           <div class="partners_icons-box">
             <img src="./icons/Biz360.svg" width="119.57px" height="80px" />
@@ -73,6 +76,57 @@
           </div>
         </div>
       </div>
+
+      <div class="development-pain-box">
+        <div class="development-pain-wrapper">
+            <h1 class="development-pain-title">Какие боли есть 
+                <br>на рынке разработки?</br>
+            
+            </h1>
+
+                <div class="development-pain-items">
+                    <div class="development-pain-item item_1">
+                      <h4 class="item-text">Пересечение функций Product- и Project- менеджеров</h4>
+          
+                      <span class="item-emoji">🤒</span>
+                    </div>
+                    <div class="development-pain-item item_2">
+                      <h4 class="item-text"
+                        >Общий низкий уровень знаний в области создания цифровых продуктов
+                      </h4>
+          
+                      <span class="item-emoji">🤧</span>
+                    </div>
+                    <div class="development-pain-item item_3">
+                      <h4 class="item-text">Некачественное делегирование обязанностей Proxy PO </h4>
+          
+                      <span class="item-emoji">🤕</span>
+                    </div>
+                    <div class="development-pain-item item_4">
+                      <h4 class="item-text"
+                        >В роли Product Owner выступает Stakeholder, часто не догадываясь
+                        об этом
+                      </h4>
+          
+                      <span class="item-emoji">😷</span>
+                    </div>
+                    <div class="development-pain-item item_5">
+                      <h4 class="item-text"
+                        >Заблуждение о том, что роль Product Owner возможна только при
+                        Agile-подходе</h4
+                      >
+          
+                      <span class="item-emoji">🤢</span>
+                    </div>
+                    <div class="development-pain-item item_6">
+                      <h4 class="item-text"
+                        >Разработка продуктов без Product Owner наиболее подвержена рискам
+                      </h4>
+          
+                      <span class="item-emoji">☠️</span>
+                    </div>
+            </div>
+        </div>
   </body>
 </html>
 
@@ -86,6 +140,11 @@
     font-family: "Futura PT Cond";
 
     src: local("Futura PT Cond"), url("fonts/Futura\ PT_Cond\ Medium.ttf");
+  }
+
+  @font-face {
+    font-family: "Futura PT book";
+    src: local("Futura PT book"), url("fonts/Futura-PT_Book.ttf");
   }
 
   *,
@@ -137,6 +196,12 @@
     border-radius: 0px 0px 20px 20px;
   }
 
+  .special-project-content {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+
   .special-project-text {
     display: flex;
     flex-direction: column;
@@ -163,7 +228,7 @@
 
   .special-project-advice {
     color: #637899;
-    font-family: "Futura PT";
+    font-family: "Futura PT book";
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
@@ -283,5 +348,86 @@
     display: flex;
     gap: 72px;
 
+  }
+
+  .development-pain-box {
+    display: flex;
+    flex-direction: column;
+    padding: 144px 132px 0 132px;
+    gap: 80px;
+  }
+
+  .development-pain-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+  }
+
+  .development-pain-title {
+    font-family: "Futura PT";
+    color: #27303F;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 48px;
+    text-transform: uppercase;
+  }
+
+  .development-pain-items {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  .development-pain-item {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    border: 1px solid #DBE3F0;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    justify-content: space-between;
+  }
+
+  .item_1{
+    width: 276px;
+    height: 272px;
+  }
+
+  .item_2 {
+    width: 376px;
+    height: 272px;
+  }
+
+  .item_3{
+    width: 476px;
+    height: 272px;
+  }
+
+  .item_4 {
+    width: 376px;
+  height: 272px;
+
+  }    
+  .item_5{
+    width: 376px;
+    height: 272px;
+  }
+
+  .item_6{
+    width: 376px;
+    height: 272px;
+  }
+
+  .item-text {
+    font-family: "Futura PT";
+    color: #637899;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 31.68px;
+  }
+
+  .item-emoji {
+    align-self: flex-end;
+    font-size: 24px;
   }
 </style>
