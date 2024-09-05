@@ -55,7 +55,7 @@
       </div>
     </header>
 
-    <div class="partners-box">
+    <section class="partners-box">
         <div class="content-partners-box">
           <h4 class="title-partners">Генеральные партнеры</h4>
 
@@ -75,9 +75,9 @@
             <img src="./icons/rusbase.svg" width="179.48px" height="80px" />
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="development-pain-box">
+      <section class="development-pain-box">
         <div class="development-pain-wrapper">
             <h1 class="development-pain-title">Какие боли есть 
                 <br>на рынке разработки?</br>
@@ -125,8 +125,45 @@
           
                       <span class="item-emoji">☠️</span>
                     </div>
+
+
+                   
             </div>
-        </div>
+
+            <h4 class="development-pain-advice">В результате многие продукты еще до запуска сталкиваются со сложностями — чтобы это исправить, мы собрали рекомендации экспертов и разработали тест</h4>
+        </section>
+
+
+        <section class="help-box">
+            <div class="help-text-box">
+                <span class="help-title">Чем мне поможет этот тест?</span>
+                <span class="help-subtitle">После прохождения теста вы сможете:</span>
+            </div>
+
+            <div class="help-cards-box">
+                <div class="help-card">
+                    <span class="help-emoji">👌🏻</span>
+                    <span class="help-card-text"
+                      >Определить собственный уровень знаний в области создания цифровых
+                      продуктов</span
+                    >
+                  </div>
+                  <div class="help-card">
+                    <span class="help-emoji">🖖🏻</span>
+                    <span class="help-card-text">
+                      Ознакомиться с советами ведущих экспертов рынка
+                    </span>
+                  </div>
+                  <div class="help-card">
+                    <span class="help-emoji">🤙🏻</span>
+                    <span class="help-card-text"
+                      >Бесплатно получить список полезных материалов для дальнейшего
+                      развития</span
+                    >
+                  </div>
+
+            </div>
+        </section>
   </body>
 </html>
 
@@ -135,6 +172,7 @@
     font-family: "Futura PT";
     src: local("Futura PT"), url("fonts/Futura\ PT_Medium.ttf");
   }
+
 
   @font-face {
     font-family: "Futura PT Cond";
@@ -145,6 +183,11 @@
   @font-face {
     font-family: "Futura PT book";
     src: local("Futura PT book"), url("fonts/Futura-PT_Book.ttf");
+  }
+
+  @font-face {
+    font-family: "Futura PT_Demi";
+    src: local("Futura PT_Demi"), url("fonts/Futura-PT_Demi.ttf");
   }
 
   *,
@@ -354,7 +397,7 @@
     display: flex;
     flex-direction: column;
     padding: 144px 132px 0 132px;
-    gap: 80px;
+    gap: 96px;
   }
 
   .development-pain-wrapper {
@@ -430,4 +473,83 @@
     align-self: flex-end;
     font-size: 24px;
   }
+
+  .development-pain-advice {
+    align-self: center;
+    width: 768px;
+    height: 96px;
+    font-family: "Futura PT";
+    color: #27303F;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 31.68px;
+    text-align: center;
+    word-wrap: break-word;
+  }
+
+  .help-box {
+    display: flex;
+    flex-direction: column;
+    padding: 144px 132px 0 132px;
+    gap: 80px;
+    background-color: #F9FAFD;
+  }
+
+  .help-text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .help-title {
+    font-family: "Futura PT";
+    color: #27303F;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .help-subtitle {
+    font-family: "Futura PT book";
+    color: #637899;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .help-cards-box {
+    display: flex;
+    gap: 24px;
+  }
+
+  .help-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 376px;
+    min-height: 280px;
+    border: 1px solid #DBE3F0;
+    border-radius: 20px;
+    padding: 0px 40px;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .help-emoji {
+    font-size: 64px;
+  }
+
+  .help-card-text {
+    color: #27303F;
+    font-family: "Futura PT_Demi";
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+
 </style>
