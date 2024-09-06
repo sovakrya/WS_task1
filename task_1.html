@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
-  <head> </head>
+  <head> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
   <body>
     <header class="header-box">
       <div class="header-logo-wrapper">
@@ -523,7 +525,7 @@
 
   .special-project-btn {
     border: 2px solid #56b8ff;
-    background-color: #ffffff;
+    background: none;
     width: 392px;
     height: 56px;
     border-radius: 12px;
@@ -764,8 +766,8 @@
   .help-card {
     display: flex;
     flex-direction: column;
-    min-width: 376px;
-    min-height: 280px;
+    width: 376px;
+    height: 280px;
     border: 1px solid #DBE3F0;
     border-radius: 20px;
     padding: 0px 40px;
@@ -1044,6 +1046,11 @@
 
   }
 
+  .footer-img {
+    width: 628px;
+    height: 684.31px;
+  }
+
   .social-net-title {
     color: #637899;
     font-family: "Futura PT_Demi";
@@ -1090,5 +1097,148 @@
     line-height: 26.1px;
   }
 
+@media screen and (max-width: 980px) {
+  .header-box {
+    padding: 0 32px;
+  }
 
+
+  .header-logo-wrapper {
+    right: 32px;
+  }
+
+  .header-logo {
+    width: 110.64px;
+  }
+
+  .special-project-box {
+    z-index: 1;
+  } 
+
+  .header-content-box {
+    gap: 0;
+    justify-content: baseline;
+  }
+
+  .header-decor {
+    position: absolute;
+    top: 36px;
+    right: 30px;
+    margin-top: 0;
+    z-index: 0;
+  }
+
+  .partners-box {
+    padding: 96px 32px 0 32px;
+    gap: 72px;
+  }
+
+  .development-pain-box {
+    padding: 144px 32px 0 32px;
+  }
+
+  .item_1{
+    width: 212px;
+    height: 304px;
+  }
+
+  .item_2 {
+    width: 290px;
+    height: 304px;
+  }
+
+  .item_3{
+    width: 366px;
+    height: 304px;
+  }
+
+  .item_4 {
+    width: 289px;
+  height: 304px;
+
+  }    
+  .item_5{
+    width: 290px;
+    height: 304px;
+  }
+
+  .item_6{
+    width: 289px;
+    height: 304px;
+  }
+
+  .help-box {
+    padding: 144px 32px;
+    gap: 32px;
+  }
+
+  .help-card {
+    width: 283px;
+    height: 328px;
+  }
+
+  .experts-box {
+    padding: 144px 32px;
+  }
+
+  .expert-item {
+    width: 211px;
+  }
+
+  .expert-border {
+    width: 131px;
+    height: 131px;
+  }
+
+  .expert-photo-man {
+    width: 131px;
+    height: 131px;
+  }
+
+  .expert-photo-women {
+    height: 65px;
+    width: 65px;
+  }
+
+  .expert-photo-wrapper {
+    width: 131px;
+    height: 131px;
+    overflow: hidden;
+    box-shadow: 0px 20px 40px 0px #0000000F;
+    border: 1px solid #DBE3F0;
+    border-radius: 50px;
+    margin-bottom: 24px;
+
+  }
+
+  .expert-photo {
+    width: calc(100% + 40px);
+    height: calc(100% + 100px);
+    object-fit: cover;
+    margin-left:-20px;
+    margin-top: -20px;
+    border: 1px solid #DBE3F0;
+    box-shadow: 0px 20px 40px 0px #0000000F;
+    border-radius: 40px; 
+  }
+
+  .seo-box {
+    padding: 40px 0;;
+  }
+
+  .expert-decor {
+    top: 300px;
+    left: 820px;
+  }
+
+  .footer-box {
+    padding: 144px 32px 0 32px;
+  }
+
+  .footer-img {
+    width: 414.33px;
+    height: 451.34px;
+  }
+
+}
 </style>
