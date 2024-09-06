@@ -5,12 +5,12 @@
   </head>
   <body>
     <header class="header-box">
-      <div class="header-logo-wrapper">
+      <div class="header-logo-wrapper" >
         <img
           src="./icons/WS-Logo-Mono.svg"
           height="80px"
           width="112px"
-          class="header-logo"
+          class="header-logo,none"
         />
       </div>
 
@@ -19,6 +19,13 @@
 
             <div class="special-project-content">
           <div class="special-project-text">
+            <img
+            src="./icons/WS-Logo-Mono.svg"
+            height="80px"
+            width="112px"
+            class="header-logo, exist"
+          />
+
             <span class="special-project-title">🔥 Спецпроект 🔥</span>
 
             <h1 class="special-project-subtitle"
@@ -32,7 +39,7 @@
           </div>
 
           <div class="special-project-btn-box">
-            <button class="special-project-btn">Начать тест</button>
+            <button id="header-btn" class="special-project-btn">Начать тест</button>
             <span class="text-under-btn">Прохождение займет ~25 минут</span>
           </div>
         </div>
@@ -52,7 +59,7 @@
         </div>
 
         <div class="header-decor">
-          <img src="./icons/headerImage.svg" width="676px" height="740px" />
+          <img src="./icons/headerImage.svg"  class="header-image"/>
         </div>
       </div>
     </header>
@@ -347,62 +354,66 @@
         </div>
         </section>
 
-        <footer class="footer-box">
-            <div class="footer-wrapper">
+          <section class="ask-box">
+            <div class="ask-text-wrapper">
+              <div class="ask-text-box">
+                <h2 class="ask-title">Все Еще не прошли тест?</h2>
 
-                <div class="footer-text-box">
-                <div class="footer-text">
-                 
-                    <h2 class="footer-title">
-                        Все Еще <br> не прошли тест?
-                    </h2>
+                <div class="ask-subtitle">Смелее, мы ничего не продаем и не собираем адреса почтовых ящиков, а лишь делаем рынок заказной разработки чуточку прозрачнее 😉</div>
+              </div>
 
-                    <span class="footer-subtitle">Смелее, мы ничего не продаем и не собираем адреса почтовых ящиков, а лишь делаем рынок заказной разработки чуточку прозрачнее 😉</span>
-                </div>
-
-                <button class="special-project-btn">Поехали!</button>
-            </div>
-              
-
-                <div class="footer-img-box">
-                    <img src="./icons/headerImage.svg" class="footer-img"/>
-                </div>
+              <div>
+                <button id="ask_btn" class="special-project-btn">ПОЕХАЛИ!</button>
+              </div>
             </div>
 
-            <div class="footer-question-box">
-                <div class="footer-question">
-
-                    <div class="footer-social-net">
-                        <div class="social-net-title">Наши соцсети</div>
-                        <div class="social-net">
-                            <div class="social-net-wrapper">
-                            <img src="./icons/facebook.png" height="24px" width="24px"/>
-                            Facebook
-                        </div>
-                      
-                        <div class="social-net-wrapper">
-                            <img src="./icons/instagram.svg" height="24px" width="24px"/>
-                            Instagram
-                        </div>
-                        </div>
-                    </div>
-
-                    <div class="footer-social-net">
-                        <div class="social-net-title">По любым вопросам</div>
-                        <div class="social-net">
-                        <div class="communications">partners@worksolutions.ru</div>
-                        <div class="communications">+7 (863) 270-16-44</div>
-                    </div>
-                    </div>
-                </div>
-
-                <div class="footer-links">
-                    <a href="http://www.freepik.com" class="link">Illustration designed by pikisuperstar / Freepik</a>
-
-                    <img src="./icons/WS-Logo-Mono.svg" width="102px" height="74px"/>
-                </div>
+            <div>
+              <img id="ask_image" src="./icons/headerImage.svg" class="ask-img"/>
             </div>
-        </footer>
+          </section>
+
+
+          <footer class="footer-box">
+            <div class="social-media-box">
+              <div class="social-media">
+                <span class="social-media-title">Наши соцсети</span>
+
+                <div class="social-media-links">
+                  <span class="soc-box">
+                    <img src="./icons/facebook.png" class="social-media-icon"/>
+
+                    <div class="soc-title">
+                      Facebook
+                    </div>
+                  </span>
+                  <span class="soc-box">
+                    <img src="./icons/instagram.svg" class="social-media-icon"/>
+
+                    <div class="soc-title">Instagram</div>
+                  </span>
+                </div>
+              </div>
+
+
+              <div class="social-media-box">
+                <div class="social-media">
+                <span class="social-media-title">По любым вопросам</span>
+
+                <div  class="social-media-links">
+                  <span class="soc-title">partners@worksolutions.ru</span>
+
+                  <span class="soc-title">+7 (863) 270-16-44</span>
+                </div>
+              </div>
+            </div>
+            </div>
+
+            <div class="links-box">
+              <a class="footer-link" href="http://www.freepik.com">Illustration designed by pikisuperstar / Freepik</a>
+
+              <img src="./icons/WS-Logo-Mono.svg" class="footer-logo"/>
+            </div>
+          </footer>
   </body>
 </html>
 
@@ -429,6 +440,8 @@
     src: local("Futura PT_Demi"), url("fonts/Futura-PT_Demi.ttf");
   }
 
+
+
   *,
   *::before,
   *::after {
@@ -439,6 +452,22 @@
     margin: 0;
     padding: 0;
     border: none;
+  }
+
+  a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+  .exist {
+    display: none;
+  }
+
+  .none {
+    display: flex;
   }
 
   .header-box {
@@ -464,6 +493,10 @@
     justify-content: space-between;
   }
 
+  .header-img {
+    width: 628px;
+    height: 684.1px;
+  }
   .special-project-box {
     position: relative;
     display: flex;
@@ -546,7 +579,7 @@
   }
 
   .text-under-btn {
-    font-family: "Futura PT";
+    font-family: "Futura PT book";
     color: #637899;
     font-weight: 400;
     font-size: 18px;
@@ -599,6 +632,9 @@
   }
 
   .header-decor {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
     margin-top: 80px;
   }
 
@@ -634,7 +670,7 @@
   .development-pain-box {
     display: flex;
     flex-direction: column;
-    padding: 144px 132px 0 132px;
+    padding: 144px 132px;
   }
 
   .development-pain-wrapper {
@@ -644,6 +680,7 @@
   }
 
   .development-pain-title {
+    margin: 0;
     font-family: "Futura PT";
     color: #27303F;
     font-weight: 800;
@@ -975,35 +1012,35 @@
   }
 
   .expert-decor {
-    position: absolute;
+    align-self: flex-end;
     width: 72px;
     height: 72px;
-    top: 320px;
-    left: 1072px;
+
   }
 
-  .footer-box {
+  .ask-box {
+    position: relative;
+    display: flex;
+    padding: 144px 132px;
+    background-color: #F9FAFD;
+  }
+
+  .ask-text-wrapper {
+
     display: flex;
     flex-direction: column;
-    background-color: #F9FAFD;
-    padding: 144px 132px 0 132px;
+    gap: 48px;
   }
 
-  .footer-wrapper {
-    display: flex;
-    gap: 24px;
-
-  }
-
-  .footer-text {
+  .ask-text-box {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    width: 476px;
   }
 
-  .footer-title {
+  .ask-title {
     margin: 0;
-    width: 476px;
     color: #27303F;
     font-family: "Futura PT";
     font-weight: 800;
@@ -1012,8 +1049,7 @@
     text-transform: uppercase;
   }
 
-  .footer-subtitle {
-    width: 476px;
+  .ask-subtitle {
     color: #637899;
     font-family: "Futura PT book";
     font-weight: 400;
@@ -1021,37 +1057,35 @@
     line-height: 24px;
   }
 
-  .footer-text-box {
-    display: flex;
-    flex-direction: column;
-    gap: 48px;
+  .ask-img {
+    width: 628px;
+    height: 684.31px;
+    position: absolute;
+    top: -140px;
+    right: 0px;
   }
 
-  .footer-question-box {
+  .footer-box {
     display: flex;
     flex-direction: column;
     gap: 36px;
+    padding: 80px 132px;
+    background-color: #F9FAFD;
   }
 
-  .footer-question {
+  .social-media-box {
     display: flex;
     gap: 24px;
   }
 
-  .footer-social-net {
+  .social-media {
+    width: 276px;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 276px;
-
   }
 
-  .footer-img {
-    width: 628px;
-    height: 684.31px;
-  }
-
-  .social-net-title {
+  .social-media-title {
     color: #637899;
     font-family: "Futura PT_Demi";
     font-weight: 500;
@@ -1059,16 +1093,24 @@
     line-height: 24px;
   }
 
-  .social-net {
+  .social-media-links {
     display: flex;
     flex-direction: column;
-    gap: 17px;
+    gap: 16px;
   }
 
-  .social-net-wrapper {
+  .soc-box {
     display: flex;
-    gap: 2px;
-    align-items: center;
+    gap: 12px;
+    align-items: flex-end;
+  }
+
+  .social-media-icon {
+    height: 24px;
+    width: 24px;
+  }
+
+  .soc-title {
     color: #637899;
     font-family: "Futura PT";
     font-weight: 500;
@@ -1076,28 +1118,42 @@
     line-height: 22px;
   }
 
-  .communications {
-    color: #637899;
-    font-family: "Futura PT";
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 26.1px;
-  }
+  
 
-  .footer-links {
+  .links-box {
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
   }
 
-  .link {
-    color: #637899;
-    font-family: "Futura PT";
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 26.1px;
-  }
+.footer-logo {
+  width: 102px;
+  height: 74px;
+}
+
+.footer-link {
+  color: #637899;
+  font-family: "Futura PT";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26.1px;
+}
+
+.footer-link:hover {
+  opacity: 80%;
+}
+  
 
 @media screen and (max-width: 980px) {
+
+  .exist {
+    display: none;
+  }
+
+  .none {
+    display: flex;
+  }
+
   .header-box {
     padding: 0 32px;
   }
@@ -1134,7 +1190,7 @@
   }
 
   .development-pain-box {
-    padding: 144px 32px 0 32px;
+    padding: 144px 32px ;
   }
 
   .item_1{
@@ -1226,19 +1282,146 @@
     padding: 40px 0;;
   }
 
+
+
+@media (max-width: 979px) and (min-width: 768px) {
+
+  .none {
+    display: none;
+  }
+
+  .exist {
+    display: flex;
+  }
+
+  .header-box {
+    padding: 0 64px;
+    align-items: center;
+  }
+
+  .header-logo-wrapper {
+    right: 370px;
+    top: 20px;
+    z-index: 2;
+  }
+
+  .header-logo {
+    height: 56px;
+    width: 156px;
+  }
+
+  .header-decor { 
+    top: 300.72px;
+    margin-top: 0;
+    left: 31.81px;
+  }
+
+  .header-image{
+    width: 832.38px;
+    height: 906.89px;
+  }
+
+  .special-project-box {
+    padding: 48px 48px 0 48px;
+    width: 640px;
+    height: 716px;
+  }
+  .special-project-content {
+    align-items: center;
+  }
+
+  .special-project-subtitle {
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 500;
+
+  }
+
+  .special-project-advice{
+    width: 392px;
+  }
+
+  .partners-box {
+    padding: 510px 48px 0 48px;
+  }
+
+  .partners_icons-box {
+   justify-content: center;
+    gap: 60.85px;
+    width: 504px;
+    flex-wrap: wrap;
+  }
+
+  .development-pain-box {
+    padding: 144px 24px;
+  }
+
+  .development-pain-advice {
+    width: 721px;
+  }
+
+  .item_1{
+    width: 224px;
+    height: 304px;
+  }
+
+  .item_2 {
+    width: 472px;
+    height: 304px;
+  }
+
+  .item_3{
+    width: 348px;
+    height: 272px;
+  }
+
+  .item_4 {
+    width: 348px;
+  height: 272px;
+
+  }    
+  .item_5{
+    width: 348px;
+    height: 272px;
+  }
+
+  .item_6{
+    width: 348px;
+    height: 272px;
+  }
+
+  .development-pain-advice {
+    align-self: auto;
+  }
+  
+  .help-box {
+    padding: 144px 24px;
+  }
+
+  .help-cards-box {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .help-card {
+    width: 348px;
+    height: 304px;
+  }
+
+  .exerts-box {
+    padding: 144px 24px;
+  }
+
+  .seo-text {
+    width: 448px;
+  }
+
   .expert-decor {
-    top: 300px;
-    left: 820px;
+    width: 56px;
+    height: 56px;
+
   }
 
-  .footer-box {
-    padding: 144px 32px 0 32px;
-  }
-
-  .footer-img {
-    width: 414.33px;
-    height: 451.34px;
-  }
 
 }
 </style>
