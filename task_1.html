@@ -211,9 +211,11 @@
                 </div>
 
                 <div class="expert-item">
+
+                  <div class="expert-photo-wrapper">
                      
                         <img class="expert-photo" src="./icons/experts/Ivan.png"/>
-                 
+                      </div>
 
                     <div class="expert-item-text">
                         <span class="expert-name">Иван Жуган</span>
@@ -248,8 +250,9 @@
                 </div>
 
                 <div class="expert-item">
-                    
+                    <div class="expert-photo-wrapper">
                         <img class="expert-photo" src="./icons/experts/Vlad.png"/>
+                      </div>
            
 
                     <div class="expert-item-text">
@@ -260,9 +263,10 @@
                 </div>
 
                 <div class="expert-item">
-             
+
+                      <div class="expert-photo-wrapper">
                         <img class="expert-photo" src="./icons/experts/Andrei.png"/>
-      
+                      </div>
 
                     <div class="expert-item-text">
                         <span class="expert-name">Андрей Хаснутдинов</span>
@@ -272,8 +276,11 @@
                 </div>
 
                 <div class="expert-item">
+
+                  <div class="expert-photo-wrapper">
       
                         <img class="expert-photo" src="./icons/experts/Alexandr.png"/>
+                      </div>
          
 
                     <div class="expert-item-text">
@@ -284,8 +291,10 @@
                 </div>
 
                 <div class="expert-item">
+                  <div class="expert-photo-wrapper">
       
                         <img class="expert-photo" src="./icons/experts/AlexandrK.png"/>
+                      </div>
               
 
                     <div class="expert-item-text">
@@ -296,8 +305,11 @@
                 </div>
 
                 <div class="expert-item">
-        
+
+                  <div class="expert-photo-wrapper">
                         <img class="expert-photo" src="./icons/experts/Artem.png"/>
+                      </div>
+        
                  
 
                     <div class="expert-item-text">
@@ -853,6 +865,8 @@
 
   }
 
+
+
   .expert-photo-man {
     width: 196px;
     height: 196px;
@@ -891,11 +905,23 @@
     text-align: center;
   }
 
-
-
-  .expert-photo {
+  .expert-photo-wrapper {
     width: 196px;
     height: 196px;
+    overflow: hidden;
+    box-shadow: 0px 20px 40px 0px #0000000F;
+    border: 1px solid #DBE3F0;
+    border-radius: 50px;
+    margin-bottom: 24px;
+
+  }
+
+  .expert-photo {
+    width: calc(100% + 40px);
+    height: calc(100% + 100px);
+    object-fit: cover;
+    margin-left:-20px;
+    margin-top: -20px;
     border: 1px solid #DBE3F0;
     box-shadow: 0px 20px 40px 0px #0000000F;
     border-radius: 40px; 
