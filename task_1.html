@@ -10,7 +10,7 @@
           src="./icons/WS-Logo-Mono.svg"
           height="80px"
           width="112px"
-          class="header-logo,none"
+          class="header-logo, none"
         />
       </div>
 
@@ -448,6 +448,12 @@
     box-sizing: border-box;
   }
 
+  h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+  margin: 0;
+}
+
   body {
     margin: 0;
     padding: 0;
@@ -462,9 +468,9 @@ a:hover  {
     text-decoration: none;
 }
 
-  .exist {
-    display: none;
-  }
+.exist {
+  display: none;
+}
 
   .none {
     display: flex;
@@ -533,12 +539,14 @@ a:hover  {
   }
 
   .special-project-subtitle {
+    margin: 0;
     color: #27303f;
     font-family: "Futura PT Cond";
     font-weight: 400;
     font-size: 64px;
     line-height: 64px;
     text-align: center;
+    text-transform: uppercase;
   }
 
   .special-project-advice {
@@ -869,6 +877,7 @@ a:hover  {
   }
 
   .experts-list-box {
+    max-width: 1176px;
     display: flex;
     gap: 24px;
     flex-wrap: wrap;
@@ -892,6 +901,8 @@ a:hover  {
     background: none;
     box-shadow: 0px 20px 40px 0px #0000000F;
     border-radius: 40px;
+    max-width: 196px;
+    max-height: 196px;
     width: 196px;
     height: 196px;
   }
@@ -1026,7 +1037,7 @@ a:hover  {
   }
 
   .ask-text-wrapper {
-
+    z-index: 1;
     display: flex;
     flex-direction: column;
     gap: 48px;
@@ -1146,11 +1157,11 @@ a:hover  {
 
 @media screen and (max-width: 980px) {
 
-  .exist {
+  .exist{
     display: none;
   }
 
-  .none {
+  .none-979{
     display: flex;
   }
 
@@ -1282,11 +1293,31 @@ a:hover  {
     padding: 40px 0;;
   }
 
+  .ask-box {
+    padding: 144px 32px 112px 32px;
+  }
 
+
+  .ask-text-box {
+    width: 446px;
+  }
+
+  .ask-img {
+    width: 446px;
+    height: 451.28px;
+    position: absolute;
+    top: 40px;
+    right: 0px;
+  }
+
+  .footer-box {
+    padding: 80px 32px;
+  }
+}
 
 @media (max-width: 979px) and (min-width: 768px) {
 
-  .none {
+  .none{
     display: none;
   }
 
@@ -1422,6 +1453,195 @@ a:hover  {
 
   }
 
+  .ask-box {
+    padding: 144px 24px;
+  }
+
+
+  .ask-text-box {
+    width: 348px;
+  }
+
+  .ask-title {
+  width: 348px;
+  }
+
+  .ask-img {
+    width: 348px;
+    height: 353px;
+    position: absolute;
+    top: 110px;
+    right: 0px;
+  }
+
+  .footer-box {
+    padding: 80px 32px;
+  }
+
+
+}
+
+@media (max-width: 767px) and (min-width:320px) {
+
+  .none {
+    display: none;
+  }
+
+  .exist{
+    display: flex;
+  }
+
+    .header-box {
+      padding:  0 16px 32px 16px;
+    }
+
+    .header-logo {
+      width: 77.45px;
+      height: 56px;
+    }
+
+    .header-decor {
+      top: 272px;
+      left: 0px;
+    }
+
+    .header-image {
+      width: 448px;
+      height: 490.24px;
+    }
+
+    .header-content-box {
+      justify-content: center;
+    }
+
+    .special-project-box {
+      width: 288px;
+    height: 614px;
+    padding: 32px 16px 23px 16px;
+  
+  }
+
+  .special-project-subtitle {
+    font-size: 44px;
+    line-height: 44px;
+  
+  }
+
+  .special-project-advice{
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .special-project-btn {
+    width: 256px;
+    height: 48px;
+  }
+
+  .special-project-content {
+    gap: 32px;
+  }
+
+  .special-project-text {
+    gap: 16px;
+  }
+
+
+  .semicircle {
+    height: 70px;
+    width: 275px;
+  }
+
+  .inner-circle {
+    height: 35%;
+    left: 30px;
+  }
+
+  .more-details-text {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .partners-box {
+    padding: 96px 0 0 0;
+    gap: 56px;
+  }
+
+  .title-partners {
+    font-size: 20px;
+    line-height: 26.4px;
+  }
+
+  .partners_icons-box {
+    gap: 48px;
+  }
+
+  .partners_icons-box{
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 20px;
+    align-items: center;
+  }
+
+  .development-pain-box {
+    padding: 96px 16px;
+  }
+
+  .development-pain-wrapper{
+    gap: 56px;
+  }
+
+  .development-pain-title{
+    align-self: center;
+    font-size: 32px;
+    line-height: 38.4px;
+    width: 288px;
+  }
+
+  .development-pain-items {
+    gap: 12px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .item_1{
+    width: 288px;
+    height: 158px;
+  }
+
+  .item_2 {
+    width: 288px;
+    height: 158px;
+  }
+
+  .item_3{
+    width: 288px;
+    height: 158px;
+  }
+
+  .item_4 {
+    width: 288px;
+    height: 158px;
+
+  }    
+  .item_5{
+    width: 288px;
+    height: 158px;
+  }
+
+  .item_6{
+    width: 288px;
+    height: 158px;
+  }
+
+  .item-text{
+    font-size: 20px;
+    line-height: 25.4px;
+  }
+
+  .development-pain-advice{
+    width: 288px;
+    height: 156px;
+  }
 
 }
 </style>
