@@ -586,6 +586,9 @@ a:hover {
 }
 
 .seo-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
   width: 480px;
   color: #27303f;
   font-family: "Futura PT book";
