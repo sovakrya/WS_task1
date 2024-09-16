@@ -33,6 +33,20 @@
   width: 628px;
   height: 684px;
 }
+
+.font-main {
+  font-family: "Futura PT"; 
+  font-weight: 800; 
+  font-size: 18px; 
+}
+
+.font-title {
+  font-family: "Futura PT";
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 48px;
+}
+
 .special-project-box {
   position: relative;
   display: flex;
@@ -101,9 +115,6 @@
   height: 56px;
   border-radius: 12px;
   color: #56b8ff;
-  font-family: "Futura PT";
-  font-weight: 800;
-  font-size: 18px;
   line-height: 20px;
   text-align: center;
   transition: 0.5s ease;
@@ -219,11 +230,7 @@
 
 .development-pain-title {
   margin: 0;
-  font-family: "Futura PT";
   color: #27303f;
-  font-weight: 800;
-  font-size: 40px;
-  line-height: 48px;
   text-transform: uppercase;
 }
 
@@ -243,31 +250,31 @@
   justify-content: space-between;
 }
 
-.item_1 {
+.development-pain-card_1 {
   width: 276px;
   height: 272px;
 }
 
-.item_2 {
+.development-pain-card_2 {
   width: 376px;
   height: 272px;
 }
 
-.item_3 {
+.development-pain-card_3 {
   width: 476px;
   height: 272px;
 }
 
-.item_4 {
+.development-pain-card_4 {
   width: 376px;
   height: 272px;
 }
-.item_5 {
+.development-pain-card_5 {
   width: 376px;
   height: 272px;
 }
 
-.item_6 {
+.development-pain-card_6 {
   width: 376px;
   height: 272px;
 }
@@ -314,11 +321,7 @@
 }
 
 .help-title {
-  font-family: "Futura PT";
   color: #27303f;
-  font-weight: 800;
-  font-size: 40px;
-  line-height: 48px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -388,10 +391,6 @@
 .experts-title {
   margin: 0;
   color: #27303f;
-  font-family: "Futura PT";
-  font-weight: 800;
-  font-size: 40px;
-  line-height: 48px;
   text-align: center;
 }
 
@@ -575,10 +574,6 @@
 .ask-title {
   margin: 0;
   color: #27303f;
-  font-family: "Futura PT";
-  font-weight: 800;
-  font-size: 40px;
-  line-height: 48px;
   text-transform: uppercase;
 }
 
@@ -721,31 +716,31 @@
     padding: 144px 32px;
   }
 
-  .item_1 {
+  .development-pain-card_1 {
     width: 212px;
     height: 304px;
   }
 
-  .item_2 {
+  .development-pain-card_2 {
     width: 290px;
     height: 304px;
   }
 
-  .item_3 {
+  .development-pain-card_3 {
     width: 366px;
     height: 304px;
   }
 
-  .item_4 {
+  .development-pain-card_4 {
     width: 289px;
     height: 304px;
   }
-  .item_5 {
+  .development-pain-card_5 {
     width: 290px;
     height: 304px;
   }
 
-  .item_6 {
+  .development-pain-card_6 {
     width: 289px;
     height: 304px;
   }
@@ -903,31 +898,31 @@
     width: 721px;
   }
 
-  .item_1 {
+  .development-pain-card_1 {
     width: 224px;
     height: 304px;
   }
 
-  .item_2 {
+  .development-pain-card_2 {
     width: 472px;
     height: 304px;
   }
 
-  .item_3 {
+  .development-pain-card_3 {
     width: 348px;
     height: 272px;
   }
 
-  .item_4 {
+  .development-pain-card_4 {
     width: 348px;
     height: 272px;
   }
-  .item_5 {
+  .development-pain-card_5 {
     width: 348px;
     height: 272px;
   }
 
-  .item_6 {
+  .development-pain-card_6 {
     width: 348px;
     height: 272px;
   }
@@ -1106,31 +1101,31 @@
     align-items: center;
   }
 
-  .item_1 {
+  .development-pain-card_1 {
     width: 288px;
     height: 158px;
   }
 
-  .item_2 {
+  .development-pain-card_2 {
     width: 288px;
     height: 158px;
   }
 
-  .item_3 {
+  .development-pain-card_3 {
     width: 288px;
     height: 158px;
   }
 
-  .item_4 {
+  .development-pain-card_4 {
     width: 288px;
     height: 158px;
   }
-  .item_5 {
+  .development-pain-card_5 {
     width: 288px;
     height: 158px;
   }
 
-  .item_6 {
+  .development-pain-card_6 {
     width: 288px;
     height: 158px;
   }
