@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "Futura PT";
+    src: local("Futura PT"), url("./assets/fonts/PT_Medium.ttf");
+  }
+  
+  @font-face {
+    font-family: "Futura PT Cond";
+  
+    src: local("Futura PT Cond"),
+      url("./assets/fonts/Futura\ PT_Cond\ Medium.ttf");
+  }
+  
+  @font-face {
+    font-family: "Futura PT book";
+    src: local("Futura PT book"), url("./assets/fonts/Futura-PT_Book.ttf");
+  }
+  
+  @font-face {
+    font-family: "Futura PT_Demi";
+    src: local("Futura PT_Demi"), url("./assets/fonts/Futura-PT_Demi.ttf");
+  }
